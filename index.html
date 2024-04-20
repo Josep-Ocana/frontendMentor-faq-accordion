@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
 		<link
 			rel="icon"
 			type="image/png"
@@ -10,28 +11,29 @@
 			href="./assets/images/favicon-32x32.png"
 		/>
 		<title>Frontend Mentor | FAQ accordion</title>
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 
 	<body>
-		<main>
+		<main class="container">
 			<header>
-				<div class="icon-star"></div>
+				<img
+					src="./assets/images/icon-star.svg"
+					alt="Icon star"
+					class="icon-star"
+				/>
 				<h3 class="title">FAQs</h3>
 			</header>
 			<div class="accordion">
 				<div class="accordion-item">
-					<div class="accordion-header">
-						What is Frontend Mentor, and how will it help me?
-						<i class="icon"></i>
+					<div class="accordion-container-header">
+						<div class="accordion-header">
+							What is Frontend Mentor, and how will it help me?
+						</div>
+						<img
+							src="./assets/images/icon-plus.svg"
+							alt="Icon"
+							class="icon"
+						/>
 					</div>
 					<div class="accordion-content">
 						Frontend Mentor offers realistic coding challenges to help
@@ -41,9 +43,13 @@
 					</div>
 				</div>
 				<div class="accordion-item">
-					<div class="accordion-header">
-						Is Frontend Mentor free?
-						<i class="icon"></i>
+					<div class="accordion-container-header">
+						<div class="accordion-header">Is Frontend Mentor free?</div>
+						<img
+							src="./assets/images/icon-plus.svg"
+							alt="Icon"
+							class="icon"
+						/>
 					</div>
 					<div class="accordion-content">
 						Yes, Frontend Mentor offers both free and premium coding
@@ -52,9 +58,15 @@
 					</div>
 				</div>
 				<div class="accordion-item">
-					<div class="accordion-header">
-						Can I use Frontend Mentor projects in my portfolio?
-						<i class="icon"></i>
+					<div class="accordion-container-header">
+						<div class="accordion-header">
+							Can I use Frontend Mentor projects in my portfolio?
+						</div>
+						<img
+							src="./assets/images/icon-plus.svg"
+							alt="Icon"
+							class="icon"
+						/>
 					</div>
 					<div class="accordion-content">
 						Yes, you can use projects completed on Frontend Mentor in
@@ -63,10 +75,15 @@
 					</div>
 				</div>
 				<div class="accordion-item">
-					<div class="accordion-header">
-						How can I get help if I'm stuck on a Frontend Mentor
-						challenge?
-						<i class="icon"></i>
+					<div class="accordion-container-header">
+						<div class="accordion-header">
+							How can I get help if I'm stuck on a challenge?
+						</div>
+						<img
+							src="./assets/images/icon-plus.svg"
+							alt="Icon"
+							class="icon"
+						/>
 					</div>
 					<div class="accordion-content">
 						The best place to get help is inside Frontend Mentor's
@@ -78,10 +95,14 @@
 		</main>
 
 		<footer class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			<div id="challenge">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>
+				.
+			</div>
+			<div id="coded">Coded by <a href="#">Josep Ocaña Puigdevall </a>.</div>
 		</footer>
 	</body>
 </html>

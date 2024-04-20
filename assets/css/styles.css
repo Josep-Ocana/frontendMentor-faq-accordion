@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--font-family: 'Work Sans', serif;
+	--white: hsl(0, 0%, 100%);
+	--light-pink: hsl(275, 100%, 97%);
+	--grayish-purple: hsl(292, 16%, 49%);
+	--grayish-purple-border: hsla(294, 16%, 77%, 0.1);
+	--dark-purple: hsl(292, 42%, 14%);
+	/* --purple: hsl(280.92, 82.98%, 53.92%); */
+}
+
+/* Presets_______________________________________*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	width: 100%;
+	height: 100%;
+	background: url('../images/background-pattern-desktop.svg') repeat-x;
+	background-color: var(--light-pink);
+	font-family: var(--font-family);
+}
+
+/* Container Accordion __________________________*/
+.container {
+	margin: 10.44rem auto;
+	background: var(--white);
+	width: 36.8rem;
+	padding: 2.46rem;
+	border-radius: 0.9rem;
+}
+
+/*  Header ______________________________________*/
+header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.58rem;
+}
+.icon-star {
+	width: 2.5rem;
+	margin-right: 1.4rem;
+}
+
+.title {
+	font-size: 3.45rem;
+	font-weight: 700;
+	color: var(--dark-purple);
+}
+
+/* Accordion ____________________________________*/
+.accordion-item {
+	display: flex;
+	flex-direction: column;
+	padding-block: 1.4rem;
+}
+
+.accordion-item:not(:last-child) {
+	border-bottom: 2.5px solid var(--grayish-purple-border);
+}
+
+.accordion-item:last-child {
+	padding-bottom: 0;
+}
+
+.accordion-container-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.accordion-header {
+	color: var(--dark-purple);
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.accordion-content {
+	display: none;
+	padding-top: 1.5rem;
+	font-size: 0.98rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	color: var(--grayish-purple);
+	opacity: 0.75;
+}
+
+.icon {
+	cursor: pointer;
+}
+
+.show {
+	display: block;
+}
+
+/* Footer _______________________________________*/
+.attribution {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	width: 100vw;
+	padding: 2.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--white);
+	background: url('../images/background-pattern-desktop.svg') repeat-x;
+}
+
+.attribution a {
+	color: var(--white);
+}
