@@ -32,8 +32,8 @@ body {
 .container {
 	margin: 10.44rem auto;
 	background: var(--white);
-	width: 36.8rem;
-	padding: 2.46rem;
+	width: 37.2rem;
+	padding: 2.46rem 2.4rem 2.46rem 2.46rem;
 	border-radius: 0.9rem;
 }
 
@@ -73,6 +73,14 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	/* remove button styles */
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
 }
 
 .accordion-header {
@@ -81,18 +89,20 @@ header {
 	font-size: 1.1rem;
 }
 
+.span-icon {
+	display: inline-block;
+	width: 30px;
+	height: 31px;
+}
+
 .accordion-content {
-	display: none;
+	/* display: none; */
 	padding-top: 1.5rem;
 	font-size: 0.98rem;
 	font-weight: 500;
 	line-height: 1.5rem;
 	color: var(--grayish-purple);
 	opacity: 0.75;
-}
-
-.icon {
-	cursor: pointer;
 }
 
 .show {
@@ -149,10 +159,14 @@ header {
 	.accordion-item {
 		padding-block: 1.2rem;
 	}
+
+	.accordion-header {
+		text-align: start;
+	}
 }
 
 /* Mobile Design */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
 	.accordion-header {
 		width: 15rem;
 	}
