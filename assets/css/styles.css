@@ -115,3 +115,45 @@ header {
 .attribution a {
 	color: var(--white);
 }
+
+/* MEDIA QUERIES
+    600px
+*/
+@media screen and (max-width: 610px) {
+	* {
+		font-size: 14px;
+	}
+	body {
+		background: url('../images/background-pattern-mobile.svg') repeat-x;
+		background-color: var(--light-pink);
+	}
+
+	.container {
+		margin: 10.2rem auto;
+		width: 86%;
+		padding: 1.8rem;
+		border-radius: 0.5rem;
+	}
+
+	.icon-star {
+		width: 1.8rem;
+	}
+
+	.title {
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: var(--dark-purple);
+		margin-bottom: 0;
+	}
+
+	.accordion-item {
+		padding-block: 1.2rem;
+	}
+}
+
+/* Mobile Design */
+@media screen and (max-width: 375px) {
+	.accordion-header {
+		width: 15rem;
+	}
+}
