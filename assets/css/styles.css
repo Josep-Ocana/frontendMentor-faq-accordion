@@ -129,7 +129,7 @@ header {
 /* MEDIA QUERIES
     600px
 */
-@media screen and (max-width: 610px) {
+@media (width <= 610px) {
 	* {
 		font-size: 14px;
 	}
@@ -163,10 +163,14 @@ header {
 	.accordion-header {
 		text-align: start;
 	}
+
+	.attribution {
+		flex-direction: column;
+	}
 }
 
 /* Mobile Design */
-@media screen and (max-width: 376px) {
+@media (width <= 375px) {
 	.accordion-header {
 		width: 15rem;
 	}
