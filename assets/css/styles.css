@@ -23,18 +23,18 @@ body {
 	place-content: center;
 	width: 100%;
 	height: 100%;
+	font-family: var(--font-family);
 	background: url('../images/background-pattern-desktop.svg') repeat-x;
 	background-color: var(--light-pink);
-	font-family: var(--font-family);
 }
 
 /* Container Accordion __________________________*/
 .container {
-	margin: 10.44rem auto;
-	background: var(--white);
 	width: 37.2rem;
+	margin: 10.44rem auto;
 	padding: 2.46rem 2.4rem 2.46rem 2.46rem;
 	border-radius: 0.9rem;
+	background: var(--white);
 }
 
 /*  Header ______________________________________*/
@@ -75,11 +75,11 @@ header {
 	align-items: center;
 
 	/* remove button styles */
-	background: none;
-	color: inherit;
-	border: none;
 	padding: 0;
+	border: none;
 	font: inherit;
+	color: inherit;
+	background: none;
 	transition: all 1s ease;
 }
 
@@ -89,9 +89,9 @@ header {
 }
 
 .accordion-header {
-	color: var(--dark-purple);
 	font-weight: 700;
 	font-size: 1.1rem;
+	color: var(--dark-purple);
 }
 
 .span-icon {
@@ -105,8 +105,8 @@ header {
 	padding-top: 1.5rem;
 	font-size: 0.98rem;
 	font-weight: 500;
-	line-height: 1.5rem;
 	color: var(--grayish-purple);
+	line-height: 1.5rem;
 	opacity: 0.75;
 }
 
@@ -121,10 +121,10 @@ header {
 	gap: 1rem;
 	width: 100vw;
 	padding: 2.5rem;
-	text-align: center;
-	text-decoration: none;
 	color: var(--white);
 	background: url('../images/background-pattern-desktop.svg') repeat-x;
+	text-align: center;
+	text-decoration: none;
 }
 
 .attribution a {
