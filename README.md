@@ -33,6 +33,10 @@ Users should be able to:
 
 ![My desktop screenshot](./screenshots/desktop-design.jpeg)
 
+#### Desktop
+
+![My desktop screenshot](./screenshots/desktop-design_opened.jpeg)
+
 #### Active-states
 
 ![My desktop screenshot](./screenshots/active-states.jpeg)
