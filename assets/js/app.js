@@ -4,8 +4,6 @@ const button = document.querySelectorAll('.accordion-container-header');
 // Iterate buttons of accordion
 button.forEach(element => {
 	element.addEventListener('click', e => {
-		e.preventDefault();
-
 		const idButton = element.getAttribute('aria-controls');
 		const content = document.getElementById(idButton);
 		const id = idButton.split('-')[2];

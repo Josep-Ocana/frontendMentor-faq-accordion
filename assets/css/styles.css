@@ -8,6 +8,7 @@
 	--grayish-purple-border: hsla(294, 16%, 77%, 0.1);
 	--dark-purple: hsl(292, 42%, 14%);
 	--purple: hsl(280.92, 82.98%, 53.92%);
+	--shadow: rgba(42, 7, 44, 0.15);
 }
 
 /* Presets_______________________________________*/
@@ -35,6 +36,7 @@ body {
 	padding: 2.46rem 2.4rem 2.46rem 2.46rem;
 	border-radius: 0.9rem;
 	background: var(--white);
+	box-shadow: 0 15px 50px 18px var(--shadow);
 }
 
 /*  Header ______________________________________*/
